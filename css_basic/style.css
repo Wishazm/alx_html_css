@@ -52,3 +52,11 @@ footer a {
   color: #0073e6;
   text-decoration: none;
 }
+table {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}

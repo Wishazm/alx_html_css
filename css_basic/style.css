@@ -1,3 +1,6 @@
+/* styles.css */
+
+/* Reset margin and ensure full height */
 body {
   display: flex;
   flex-direction: column;
@@ -6,12 +9,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Main container with flex row */
 main {
   display: flex;
   flex-direction: row;
   flex: auto;
 }
 
+/* Article section takes 2/3 width */
 article {
   flex: 2;
   overflow-y: auto;
@@ -19,6 +24,7 @@ article {
   box-sizing: border-box;
 }
 
+/* Aside section takes 1/3 width */
 aside {
   flex: 1;
   overflow-y: auto;
@@ -27,6 +33,7 @@ aside {
   background: #f9f9f9;
 }
 
+/* Header and footer styling */
 header,
 footer {
   padding: 1rem;
@@ -34,6 +41,7 @@ footer {
   text-align: center;
 }
 
+/* Optional: remove list bullets from header nav */
 header ul {
   list-style: none;
   padding: 0;
@@ -53,10 +61,18 @@ footer a {
   text-decoration: none;
 }
 table {
-  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%; /* optional, makes table span full width */
 }
+
+table,
 th,
 td {
-  padding: 8px;
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px; /* optional, for better spacing */
   text-align: left;
 }

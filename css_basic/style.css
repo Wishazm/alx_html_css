@@ -60,9 +60,11 @@ footer a {
   color: #0073e6;
   text-decoration: none;
 }
+
+/* Table styling */
 table {
   border-collapse: collapse;
-  width: 100%; /* optional, makes table span full width */
+  width: 100%;
 }
 
 table,
@@ -73,6 +75,32 @@ td {
 
 th,
 td {
-  padding: 8px; /* optional, for better spacing */
+  padding: 8px;
   text-align: left;
+}
+
+/* ✅ Responsive improvements */
+
+/* Make images scale nicely on small screens */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Wrapper to allow horizontal scrolling for wide tables */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive navigation for small screens */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column; /* stack article and aside vertically */
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
